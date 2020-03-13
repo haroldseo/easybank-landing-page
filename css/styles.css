@@ -1,15 +1,110 @@
-@import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Public+Sans:300,400&display=swap');
 
 body {
     margin: 0;
-    font-size: 18px;
     font-family: 'Public Sans', sans-serif;
     font-weight: 300;
 }
 
+p {
+    font-size: .9em;
+    /* line-height: 1.5em; */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    box-sizing: border-box;
+    padding: 1.6em 10em;
+    width: 100%;
+}
+
+.logo {
+    width: 140px;
+}
+
+.hide-desktop {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.navbar {
+    display: flex;
+}
+
+    .navbar > li {
+        margin: 0 15px;
+    }
+
+    .navbar > li a {
+        text-decoration: none;
+        color: rgb(160, 160, 160);
+        font-size: .9em;
+    }
+
+.request-btn {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: .9em;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.bg-container {
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-color: rgb(250, 250, 250);
+    background-repeat: no-repeat;
+    background-position: 375% 65%;
+    height: 640px;
+    width: 100%;
+    position: relative;
+}
+
+.hero {
+    width: 50%;
+    padding-top: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+    .hero h1 {
+        font-size: 44px;
+        font-weight: 300;
+        margin: 20px 0;
+    }
+
+    .hero p {
+        line-height: 1.5em;
+    }
+
+.phones {
+    position: absolute;
+    top: -20%;
+    left: 55%;
+}
+/* body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+} */
+
 /* Header */
 
-#header {
+/* #header {
     background-color: white;
     height: 5em;
     width: 100%;
@@ -51,10 +146,10 @@ body {
                     text-decoration: none;
                 }
 
-    #header button {
+    .inviteButton {
         background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
         color: white;
-        font-size: 18px;
+        font-size: 16px;
         font-family: 'Public Sans', sans-serif;
         font-weight: 300;
         top: 50%;
@@ -64,7 +159,7 @@ body {
         border-radius: 30px;
         transform: translateY(-50%);
         position: absolute;
-    }
+    } */
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
